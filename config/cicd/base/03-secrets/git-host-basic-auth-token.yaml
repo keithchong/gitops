@@ -1,0 +1,18 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: git-host-basic-auth-token
+  namespace: cicd
+spec:
+  encryptedData:
+    password: AgAXrUJ1ORrTFw1VG5ARMf1j9FnSDB0IGMogqItrdkmoDcIGJcpmd6Fwxltjc6PZf9Jnsc6mJ0HLD4/XBKcYvyaVvSYolaUFZABouhHIDZ7j1HoFzKM9QzUsI8lqWbP6E10V3dNF43tdwXpgJSVtNR/iLNmusQo6+MLgBJUpIdWOgxVfEidUvoZWiQc3XzkyHOT4gHv/Tjid4mSQxAlEys/tUYR3Gp8bmpjaiTxgF2PrMg4mm9tm9hID6YBbGl9Uc0VgxdS+d5iKVcR7kKHQ+/F7xbFB6E+lOkS3YYks/m59Y3J+za8N4FUwHrkdsiltvIDw2HHxWBRjfrz5DS2J2P6Rv37D15KXlrzrWGITI/QkNTVLzXW/HeWuGtNcleaIlq7hFSuivQeaw3EYYfrlNNDFPM4Ic5NJOg8svRej/Nk1dfnmvKH9oSBke8COS8+F6g73G7057onkcJDAiq9KW8Gb7IoqeVk6d5py0vByTIz3iGDfbPJBknjOHKgNR0Smf9KdgL3m1ybdfVSmIRxq9CXtUjS3cATx4IyVlJzpr6mmOEfLgHmwKlHnQvJuRfJE0HdUoo23HUkHdm6rsQ21PMt/3hYGtphqLWnGsjRLX+k4Mw1LsXUpzRj+Qdw4H8TT0QaNca8RQXuC72K5rQTqCQekoGvkDu5B7cpTQA0n2dq5czty3aAVcH6ifOb1TewYia9hBZA/WfqQQKIwkH3OBefyMuxGcA4/qxaFC3xoOGF6cuhlHrthk5pn
+    username: AgB/ESieddDQJN3NyGVZZFfgbDH/xIKszmZe6TySsq1LyPfKiaT6CM8JA7vgaK8rDEeo7NwljpIkkQZP0rWPtRW7og88g2ZNhcvBfqte4h1Yqndog55XQz3cy6Oh07a1gVtAP/N+Bd8bQF9JTKUKJKURof6LqiVFlQS55vJQLN7LCtpdGkdQAxwa2DE8jH26XtvUlOTCXDMtafG3zh1zPbJ7bl0P4BMk7xHyWZccOPCIrmV4sZ7SYvNi9Sfc5LHSuqe2OByw3Wud8+unnbd0PjXA+5PwcCwxQSgHvdwXlHaqd3rsgx46MKFeTj99CleJo+dYwrWAgQBTt7BgtrzwsBMVn3PRJe9gxhWGHm6PMUEyAxajMkLmCVDnB+NK0dG2/QCNqHU1gYILLCuG++oJsWzFcYGCOccUdlpR9YWYyoPKo56p5Yqm26z5BOZHi3r/wQwHa/tcqgAWD8S3LsVKh0DjpsJxdq9yPpNc/B+i6vXTpeYK+kGfivJPrscrPvm0Jd05zArCMIm7Z80FldNVFDOQxpEedoCDEf2jnJQLjoCBpsf6u1eIM0VLwDLFD1B3q8gjBEm7Nf88dRbNSVO+lrMls41ccIFa3w+35PanGCszXuncQRd9s8ftWFTse/iit1NHo2sqib+p78GuAodHXUMMF9YrcXA2RIunsIYs3Wb2goW3t04dHM7Q116W1xTgwzfzxLJ4ymo=
+  template:
+    metadata:
+      annotations:
+        tekton.dev/git-0: https://github.com
+      creationTimestamp: null
+      name: git-host-basic-auth-token
+      namespace: cicd
+    type: kubernetes.io/basic-auth
