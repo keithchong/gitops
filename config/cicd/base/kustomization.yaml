@@ -11,12 +11,14 @@ resources:
 - 03-secrets/gitops-webhook-secret.yaml
 - 03-secrets/webhook-secret-a-long-environment-name-taxi.yaml
 - 03-secrets/webhook-secret-dev-taxi.yaml
+- 03-secrets/webhook-secret-production-us-west-taxi2.yaml
 - 04-tasks/deploy-from-source-task.yaml
 - 05-pipelines/app-ci-pipeline.yaml
 - 05-pipelines/ci-dryrun-from-push-pipeline.yaml
 - 06-bindings/a-long-environment-name-app-taxi-taxi-binding.yaml
 - 06-bindings/dev-app-taxi-taxi-binding.yaml
 - 06-bindings/github-push-binding.yaml
+- 06-bindings/production-us-west-app-taxi2-taxi2-binding.yaml
 - 07-templates/app-ci-build-from-push-template.yaml
 - 07-templates/ci-dryrun-from-push-template.yaml
 - 08-eventlisteners/cicd-event-listener.yaml
