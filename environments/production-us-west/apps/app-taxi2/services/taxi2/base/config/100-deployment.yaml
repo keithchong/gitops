@@ -5,10 +5,10 @@ metadata:
   labels:
     app.kubernetes.io/name: taxi2
     app.kubernetes.io/part-of: app-taxi2
-  name: taxi
+  name: taxi2
   namespace: production-us-west
 spec:
-  replicas: 2
+  replicas: 0
   selector:
     matchLabels:
       app.kubernetes.io/name: taxi2
