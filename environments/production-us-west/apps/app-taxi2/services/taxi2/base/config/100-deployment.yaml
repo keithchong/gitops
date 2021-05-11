@@ -6,9 +6,9 @@ metadata:
     app.kubernetes.io/name: taxi2
     app.kubernetes.io/part-of: app-taxi2
   name: taxi2
-  namespace: production-us-west
+  namespace: production-us-west2
 spec:
-  replicas: 0
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: taxi2
