@@ -22,7 +22,7 @@ spec:
         app.kubernetes.io/part-of: app-taxi2
     spec:
       containers:
-      - image: nginxinc/nginx-unprivileged:latestxxx
+      - image: nginxinc/nginx-unprivileged:latest
         imagePullPolicy: Always
         name: taxi2
         ports:
